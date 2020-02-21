@@ -36,7 +36,7 @@ namespace _2._1_3_4
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"El area de su pared es de: {pared.CalcularArea()}m^2 y el tiempo que le llevara pintar su pared es de: {CalcularTiempo()}","Area",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show($"El area de su pared es de: {pared.CalcularArea()}m^2 y el tiempo que le llevara pintar su pared es de: {CalcularTiempo()} minutos","Area",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
             
         }
@@ -48,11 +48,11 @@ namespace _2._1_3_4
                 MessageBox.Show("Favor de capturar ambos datos.", "Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }else
             {
-                pared.ModificarLargo(double.Parse(txtLargo.Text));
-                lblLargo.Text = $"Largo Actual: {pared.ConsultarLargo()}";
+                pared.Largo = double.Parse(txtLargo.Text);
+                lblLargo.Text = $"Largo Actual: {pared.Largo}";
                 txtLargo.Clear();
-                pared.ModificarAncho(double.Parse(txtAncho.Text));
-                lblAncho.Text = $"Ancho Actual: {pared.ConsultarAncho()}";
+                pared.Ancho = double.Parse(txtAncho.Text);
+                lblAncho.Text = $"Ancho Actual: {pared.Ancho}";
                 txtAncho.Clear();
             }
         }
