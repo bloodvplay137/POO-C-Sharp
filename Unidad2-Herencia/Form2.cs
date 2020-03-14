@@ -22,11 +22,12 @@ namespace Unidad2_Herencia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            unCliente = new Cliente();
-            unCliente.Nombre = textBox1.Text;
-            unCliente.FechaNacimiento = dateTimePicker1.Value;
+            unCliente = new Cliente(1500.56,dateTimePicker1.Value, textBox1.Text);
+            
             bool mayor = unCliente.EsMayorEdad();
-            MessageBox.Show($"Mayor de edad = {mayor}");
+            MessageBox.Show(unCliente.ToString());
+            Console.WriteLine(unCliente);
+
 
         }
 

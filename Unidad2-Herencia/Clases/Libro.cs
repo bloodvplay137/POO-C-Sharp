@@ -15,6 +15,10 @@ namespace Unidad2_Herencia.Clases
 			get { return _intNumPaginas; }
 			set { _intNumPaginas = value; }
 		}
+		public override string ToString()
+		{
+			return $"Titulo: {Titulo}\nPrecio: {Precio}\n Cantidad de Paginas: {_intNumPaginas}";
+		}
 
 	}
 }

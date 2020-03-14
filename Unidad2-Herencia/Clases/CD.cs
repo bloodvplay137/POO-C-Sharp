@@ -8,12 +8,16 @@ namespace Unidad2_Herencia.Clases
 {
     class CD: Publicacion
     {
-		private int _intTiempo;
+		private double _dblTiempoRep;
 
-		public int Tiempo
+		public double TiempoRep
 		{
-			get { return _intTiempo; }
-			set { _intTiempo = value; }
+			get { return _dblTiempoRep; }
+			set { _dblTiempoRep = value; }
+		}
+		public override string ToString()
+		{
+			return $"Titulo: {Titulo}\nPrecio: {Precio}\n{_dblTiempoRep}";
 		}
 
 	}

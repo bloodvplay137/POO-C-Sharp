@@ -48,7 +48,7 @@ namespace Unidad2_Herencia
                 cd = new CD();
                 cd.Titulo = strTitulo;
                 cd.Precio = dblPrecio;
-                cd.Tiempo = int.Parse(txtTiempo.Text);
+                cd.TiempoRep = double.Parse(txtTiempo.Text);
             }
             clear();
         }
@@ -63,11 +63,11 @@ namespace Unidad2_Herencia
         {
             if (radioChecked())
             {
-                MessageBox.Show($"Titulo: {libro.Titulo}\nPrecio: {libro.Precio}\nNum. Paginas: {libro.NumPaginas}");
+                MessageBox.Show(libro.ToString());
             }
             else 
             {
-                MessageBox.Show($"Titulo: {cd.Titulo}\nPrecio: {cd.Precio}\nNum. Paginas: {cd.Tiempo}");
+                MessageBox.Show(cd.ToString());
             }
             
         }
