@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Unidad2_Herencia.Clases
 {
-    class Publicacion
+    abstract class Publicacion
     {
 		private string _strTitulo;
 

@@ -8,8 +8,16 @@ namespace Unidad2_Herencia.Clases
 {
     class Cliente : Personaa
     {
-        // Método público para determinar si es mayor de edad
-        public bool EsMayorEdad()
+        
+        public Cliente(double dblLimiteCredito, DateTime dtmFecha, string strNombre): base(strNombre, dtmFecha)
+        {
+            _dblLimiteCredito = dblLimiteCredito;
+        }
+
+    private double _dblLimiteCredito;
+
+    // Método público para determinar si es mayor de edad
+    public bool EsMayorEdad()
         {
             // Variable local
             int intEdad;
@@ -20,6 +28,10 @@ namespace Unidad2_Herencia.Clases
                 return (true);
             else
                 return (false);
+        }
+        public override string ToString()
+        {
+            return $"Nombre : {Nombre} \nFecha Nacimiento: {FechaNacimiento} \nLimite Credito: {_dblLimiteCredito}";
         }
 
     }

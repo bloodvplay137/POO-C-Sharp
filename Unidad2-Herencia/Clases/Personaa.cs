@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +30,11 @@ namespace Unidad2_Herencia.Clases
             intervalo = DateTime.Now - this.FechaNacimiento;
             intEdad = (int)(intervalo.Days / 365.25);
             return (intEdad);
+        }
+        public Personaa(string strNombre, DateTime dtmFecha)
+        {
+            this._strNombre = strNombre;
+            _dtmFechaNacimiento = dtmFecha;
         }
     }
 }

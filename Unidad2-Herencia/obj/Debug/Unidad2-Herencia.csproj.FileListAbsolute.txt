@@ -1,0 +1,11 @@
+D:\dev\POO\WindowsForms\Unidad2-Herencia\bin\Debug\Unidad2-Herencia.exe.config
+D:\dev\POO\WindowsForms\Unidad2-Herencia\bin\Debug\Unidad2-Herencia.exe
+D:\dev\POO\WindowsForms\Unidad2-Herencia\bin\Debug\Unidad2-Herencia.pdb
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2-Herencia.csprojAssemblyReference.cache
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.Form1.resources
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.Properties.Resources.resources
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2-Herencia.csproj.GenerateResource.cache
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2-Herencia.exe
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2-Herencia.pdb
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.Form2.resources
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.frm3_1.resources
