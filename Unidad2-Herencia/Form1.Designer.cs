@@ -49,7 +49,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 64);
             this.button1.TabIndex = 5;
-            this.button1.Text = "3.1-1";
+            this.button1.Text = "3.1_1-4";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -59,7 +59,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(112, 64);
             this.btnSalir.TabIndex = 6;
-            this.btnSalir.Text = "3.1-1";
+            this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 

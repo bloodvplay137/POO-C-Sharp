@@ -35,16 +35,22 @@
             this.btnMostrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.gpbDatos = new System.Windows.Forms.GroupBox();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtNumPaginas = new System.Windows.Forms.TextBox();
-            this.txtTiempo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblPaginas = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
+            this.lblPaginas = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTiempo = new System.Windows.Forms.TextBox();
+            this.txtNumPaginas = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.lsbVentasLibro = new System.Windows.Forms.ListBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.txtVentas = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lsbVentasCD = new System.Windows.Forms.ListBox();
             this.gpbTipo.SuspendLayout();
             this.gpbDatos.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpbTipo
@@ -129,51 +135,14 @@
             this.gpbDatos.TabStop = false;
             this.gpbDatos.Text = "Datos de la publicacion";
             // 
-            // txtTitulo
+            // lblTiempo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(145, 21);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(100, 22);
-            this.txtTitulo.TabIndex = 0;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(145, 50);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
-            this.txtPrecio.TabIndex = 1;
-            // 
-            // txtNumPaginas
-            // 
-            this.txtNumPaginas.Location = new System.Drawing.Point(145, 78);
-            this.txtNumPaginas.Name = "txtNumPaginas";
-            this.txtNumPaginas.Size = new System.Drawing.Size(100, 22);
-            this.txtNumPaginas.TabIndex = 2;
-            // 
-            // txtTiempo
-            // 
-            this.txtTiempo.Location = new System.Drawing.Point(145, 106);
-            this.txtTiempo.Name = "txtTiempo";
-            this.txtTiempo.Size = new System.Drawing.Size(100, 22);
-            this.txtTiempo.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Titulo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Precio";
+            this.lblTiempo.AutoSize = true;
+            this.lblTiempo.Location = new System.Drawing.Point(13, 109);
+            this.lblTiempo.Name = "lblTiempo";
+            this.lblTiempo.Size = new System.Drawing.Size(118, 17);
+            this.lblTiempo.TabIndex = 7;
+            this.lblTiempo.Text = "Tiempo (minutos)";
             // 
             // lblPaginas
             // 
@@ -184,20 +153,110 @@
             this.lblPaginas.TabIndex = 6;
             this.lblPaginas.Text = "Num. Paginas";
             // 
-            // lblTiempo
+            // label2
             // 
-            this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(13, 109);
-            this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(118, 17);
-            this.lblTiempo.TabIndex = 7;
-            this.lblTiempo.Text = "Tiempo (minutos)";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Precio";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Titulo";
+            // 
+            // txtTiempo
+            // 
+            this.txtTiempo.Location = new System.Drawing.Point(145, 106);
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.Size = new System.Drawing.Size(100, 22);
+            this.txtTiempo.TabIndex = 3;
+            // 
+            // txtNumPaginas
+            // 
+            this.txtNumPaginas.Location = new System.Drawing.Point(145, 78);
+            this.txtNumPaginas.Name = "txtNumPaginas";
+            this.txtNumPaginas.Size = new System.Drawing.Size(100, 22);
+            this.txtNumPaginas.TabIndex = 2;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(145, 50);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.TabIndex = 1;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.Location = new System.Drawing.Point(145, 21);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(100, 22);
+            this.txtTitulo.TabIndex = 0;
+            // 
+            // lsbVentasLibro
+            // 
+            this.lsbVentasLibro.FormattingEnabled = true;
+            this.lsbVentasLibro.ItemHeight = 16;
+            this.lsbVentasLibro.Location = new System.Drawing.Point(39, 82);
+            this.lsbVentasLibro.Name = "lsbVentasLibro";
+            this.lsbVentasLibro.Size = new System.Drawing.Size(100, 180);
+            this.lsbVentasLibro.TabIndex = 6;
+            this.lsbVentasLibro.Visible = false;
+            this.lsbVentasLibro.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(39, 48);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(100, 25);
+            this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // txtVentas
+            // 
+            this.txtVentas.Location = new System.Drawing.Point(39, 21);
+            this.txtVentas.Name = "txtVentas";
+            this.txtVentas.Size = new System.Drawing.Size(100, 22);
+            this.txtVentas.TabIndex = 8;
+            this.txtVentas.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lsbVentasCD);
+            this.groupBox1.Controls.Add(this.txtVentas);
+            this.groupBox1.Controls.Add(this.lsbVentasLibro);
+            this.groupBox1.Controls.Add(this.btnAgregar);
+            this.groupBox1.Location = new System.Drawing.Point(291, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(179, 273);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ventas Ultimos 3 Meses";
+            // 
+            // lsbVentasCD
+            // 
+            this.lsbVentasCD.FormattingEnabled = true;
+            this.lsbVentasCD.ItemHeight = 16;
+            this.lsbVentasCD.Location = new System.Drawing.Point(39, 82);
+            this.lsbVentasCD.Name = "lsbVentasCD";
+            this.lsbVentasCD.Size = new System.Drawing.Size(100, 180);
+            this.lsbVentasCD.TabIndex = 9;
+            this.lsbVentasCD.Visible = false;
             // 
             // frm3_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 307);
+            this.ClientSize = new System.Drawing.Size(496, 307);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gpbDatos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnMostrar);
@@ -205,10 +264,13 @@
             this.Controls.Add(this.gpbTipo);
             this.Name = "frm3_1";
             this.Text = "3.1-1";
+            this.Load += new System.EventHandler(this.frm3_1_Load);
             this.gpbTipo.ResumeLayout(false);
             this.gpbTipo.PerformLayout();
             this.gpbDatos.ResumeLayout(false);
             this.gpbDatos.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +292,10 @@
         private System.Windows.Forms.TextBox txtNumPaginas;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.ListBox lsbVentasLibro;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.TextBox txtVentas;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox lsbVentasCD;
     }
 }

@@ -22,7 +22,10 @@ namespace Unidad2_Herencia.Clases
 			get { return _dblPrecio; }
 			set { _dblPrecio = value; }
 		}
-
-
+		double[] arrVentas = new double[3];
+		public double this[int intCelda]{
+			get{ return arrVentas[intCelda]; }
+			set { arrVentas[intCelda] = value; }
+		}
 	}
 }
