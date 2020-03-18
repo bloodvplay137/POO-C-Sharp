@@ -61,11 +61,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\AutoYVagoneta.cs" />
+    <Compile Include="Clases\Camioneta.cs" />
     <Compile Include="Clases\CD.cs" />
     <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Libro.cs" />
     <Compile Include="Clases\Personaa.cs" />
     <Compile Include="Clases\Publicacion.cs" />
+    <Compile Include="Clases\Vehiculo.cs" />
     <Compile Include="Estudiante.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -87,6 +90,12 @@
     <Compile Include="frm3_1.Designer.cs">
       <DependentUpon>frm3_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEj5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEj5.Designer.cs">
+      <DependentUpon>frmEj5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -97,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm3_1.resx">
       <DependentUpon>frm3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEj5.resx">
+      <DependentUpon>frmEj5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
