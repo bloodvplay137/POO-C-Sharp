@@ -8,6 +8,7 @@ namespace Unidad2_Herencia.Clases
 {
     class CD: Publicacion
     {
+		// atributo y propiedad
 		private double _dblTiempoRep;
 
 		public double TiempoRep
@@ -15,9 +16,10 @@ namespace Unidad2_Herencia.Clases
 			get { return _dblTiempoRep; }
 			set { _dblTiempoRep = value; }
 		}
+		//sobreescritura del metodo ToString
 		public override string ToString()
 		{
-			return $"Titulo: {Titulo}\nPrecio: {Precio}\n{_dblTiempoRep}";
+			return base.ToString() + $"\nTiempo de Reproduccion: {_dblTiempoRep}";
 		}
 
 	}

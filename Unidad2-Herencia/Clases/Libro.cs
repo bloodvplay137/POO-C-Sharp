@@ -8,6 +8,7 @@ namespace Unidad2_Herencia.Clases
 {
     class Libro: Publicacion
     {
+		//atributo  y propiedad
 		private int _intNumPaginas;
 
 		public int NumPaginas
@@ -15,9 +16,10 @@ namespace Unidad2_Herencia.Clases
 			get { return _intNumPaginas; }
 			set { _intNumPaginas = value; }
 		}
+		//sobreescritura del metodo ToString
 		public override string ToString()
 		{
-			return $"Titulo: {Titulo}\nPrecio: {Precio}\n Cantidad de Paginas: {_intNumPaginas}";
+			return base.ToString() + $"Cantidad de Paginas: {_intNumPaginas}";
 		}
 
 	}

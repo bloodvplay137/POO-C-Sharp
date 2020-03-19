@@ -13,8 +13,10 @@ namespace Unidad2_Herencia
 {
     public partial class frm3_1 : Form
     {
+        // declaracion de objetos globales
         Libro libro;
         CD cd;
+        
         // Variable que cuenta los elementos del listbox
         int mesCD = 1, mesLibro = 1;
 
@@ -43,7 +45,7 @@ namespace Unidad2_Herencia
         {
             string strTitulo = txtTitulo.Text;
             double dblPrecio = double.Parse(txtPrecio.Text);
-            if (radioChecked())
+            if (radioChecked() == true)
             {
                 libro = new Libro();
                 libro.Titulo = strTitulo;
@@ -68,7 +70,7 @@ namespace Unidad2_Herencia
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            if (radioChecked())
+            if (radioChecked() == true)
             {
                 MessageBox.Show(libro.ToString());
             }
@@ -81,7 +83,7 @@ namespace Unidad2_Herencia
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
         void clear()
         {
@@ -115,6 +117,7 @@ namespace Unidad2_Herencia
             btnAgregar.Enabled = true;
             if (rdbLibro.Checked)
             {
+                btnAgregar.Enabled = true;
                 switch (mesLibro)
                 {
                     case 1: btnAgregar.Text = "Enero"; break;
@@ -125,6 +128,7 @@ namespace Unidad2_Herencia
             }
             else
             {
+                btnAgregar.Enabled = true;
                 switch (mesCD)
                 {
                     case 1: btnAgregar.Text = "Enero"; break;
