@@ -51,5 +51,11 @@ namespace Unidad2_Herencia
             frmEj5 frm = new frmEj5();
             frm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmEj7 frm = new frmEj7();
+            frm.Show();
+        }
     }
 }

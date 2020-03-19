@@ -71,7 +71,7 @@
             this.gpbDatos.Size = new System.Drawing.Size(273, 161);
             this.gpbDatos.TabIndex = 0;
             this.gpbDatos.TabStop = false;
-            this.gpbDatos.Text = "Datos generales del vehiculo";
+            this.gpbDatos.Text = "Datos generales";
             // 
             // txtNS
             // 
@@ -294,7 +294,7 @@
             this.Controls.Add(this.gpbTipo);
             this.Controls.Add(this.gpbDatos);
             this.Name = "frmEj5";
-            this.Text = "frmEj5";
+            this.Text = "Administrar Vehiculos";
             this.Load += new System.EventHandler(this.frmEj5_Load);
             this.gpbDatos.ResumeLayout(false);
             this.gpbDatos.PerformLayout();

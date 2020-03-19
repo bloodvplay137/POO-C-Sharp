@@ -62,11 +62,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\AutoYVagoneta.cs" />
+    <Compile Include="Clases\Bateador.cs" />
     <Compile Include="Clases\Camioneta.cs" />
     <Compile Include="Clases\CD.cs" />
     <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\DePosicion.cs" />
+    <Compile Include="Clases\Jugador.cs" />
     <Compile Include="Clases\Libro.cs" />
     <Compile Include="Clases\Personaa.cs" />
+    <Compile Include="Clases\Pitcher.cs" />
     <Compile Include="Clases\Publicacion.cs" />
     <Compile Include="Clases\Vehiculo.cs" />
     <Compile Include="Estudiante.cs" />
@@ -96,6 +100,12 @@
     <Compile Include="frmEj5.Designer.cs">
       <DependentUpon>frmEj5.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEj7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEj7.Designer.cs">
+      <DependentUpon>frmEj7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -109,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEj5.resx">
       <DependentUpon>frmEj5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEj7.resx">
+      <DependentUpon>frmEj7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

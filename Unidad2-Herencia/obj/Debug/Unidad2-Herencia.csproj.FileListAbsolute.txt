@@ -10,3 +10,4 @@ D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2-Herencia.pdb
 D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.Form2.resources
 D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.frm3_1.resources
 D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.frmEj5.resources
+D:\dev\POO\WindowsForms\Unidad2-Herencia\obj\Debug\Unidad2_Herencia.frmEj7.resources
