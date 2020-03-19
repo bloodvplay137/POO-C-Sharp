@@ -24,7 +24,7 @@ namespace Unidad2_Herencia.Clases
 		// sobreescritura del metodo ToString
 		public override string ToString()
 		{
-			return base.ToString() + $"\n{_intPonches}";
+			return base.ToString() + $"\nPonches : {_intPonches}";
 		}
 
 	}

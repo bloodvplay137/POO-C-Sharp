@@ -30,6 +30,7 @@ namespace Unidad2_Herencia.Clases
 			get{ return arrVentas[intCelda]; }
 			set{ arrVentas[intCelda] = value; }
 		}
+
 		//sobreescritura del metodo ToString
 		public override string ToString()
 		{

@@ -141,7 +141,6 @@ namespace Unidad2_Herencia
         }
         void agregarMes()
         {
-            
             if (rdbLibro.Checked)
             {
                 // agregamos el vaor del textbox al arreglo

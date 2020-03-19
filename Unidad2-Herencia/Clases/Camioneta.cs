@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Unidad2_Herencia.Clases
 {
-    class Camioneta:Vehiculo
+    class Camioneta : Vehiculo
     {
 		// constructor
 		public Camioneta(string strNS, string strMarca, int intAnio, double dblPrecio, double dblCapacidadCarga, int intCantidadEjes) : base(strNS, strMarca, intAnio, dblPrecio)
 		{
+			_dblCapacidadCarga = dblCapacidadCarga;
 			_intCantidadEjes = intCantidadEjes;
 		}
 		// atributos y propiedades

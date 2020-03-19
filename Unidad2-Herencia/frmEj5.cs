@@ -32,7 +32,7 @@ namespace Unidad2_Herencia
         }
         void TextBoxesEnable()
         {
-            if (rdbCompacto.Checked || rdbDeLujo.Checked|| rdbVagoneta.Checked)
+            if (rdbCompacto.Checked || rdbDeLujo.Checked || rdbVagoneta.Checked)
             {
                 txtCantPasajeros.Enabled = true;
                 txtCapCarga.Enabled = false;
@@ -56,7 +56,7 @@ namespace Unidad2_Herencia
             {
                 if (txt is TextBox)
                 {
-                    txt.ResetText();
+                    txt.Text = "";
                 }
             }
             foreach (Control txt in gpbDatosEspecificos.Controls)
@@ -136,7 +136,7 @@ namespace Unidad2_Herencia
             else
             {
                int intCantEjes = int.Parse(txtCantEjes.Text);
-                double dblCapCarga = double.Parse(txtCapCarga.Text);
+               double dblCapCarga = double.Parse(txtCapCarga.Text);
                camioneta = new Camioneta(strNS, strMarca, intAnio, dblPrecio, dblCapCarga, intCantEjes);
             }
             // limpiar textboxes
