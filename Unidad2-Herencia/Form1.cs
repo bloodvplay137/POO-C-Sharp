@@ -57,5 +57,16 @@ namespace Unidad2_Herencia
             frmEj7 frm = new frmEj7();
             frm.Show();
         }
+
+        private void btnLista_Click(object sender, EventArgs e)
+        {
+            frmEjListas frm = new frmEjListas();
+            frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
