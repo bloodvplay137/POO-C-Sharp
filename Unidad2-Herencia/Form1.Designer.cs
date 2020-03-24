@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnLista = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -96,11 +97,22 @@
             this.btnLista.UseVisualStyleBackColor = true;
             this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(130, 82);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(112, 64);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "3.3 _1";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 401);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.btnLista);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnLista;
+        private System.Windows.Forms.Button button5;
     }
 }
 

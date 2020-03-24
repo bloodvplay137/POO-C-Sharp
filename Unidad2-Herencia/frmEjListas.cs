@@ -47,11 +47,8 @@ namespace Unidad2_Herencia
             empleado.Sueldo = double.Parse(txtSueldo.Text);
             //Agregando objeto a la lista
             empresa.Add(empleado);
+            //Agregando los valores al datagridview
             dataGridView1.Rows.Add();
-            dataGridView1.Rows.Insert(0,empleado.Num, empleado.Nombre, empleado.Sueldo);
-
-
-
         }
     }
 }
