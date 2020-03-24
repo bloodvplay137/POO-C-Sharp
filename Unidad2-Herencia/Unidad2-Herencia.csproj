@@ -67,8 +67,10 @@
     <Compile Include="Clases\Camioneta.cs" />
     <Compile Include="Clases\CD.cs" />
     <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\Departamento.cs" />
     <Compile Include="Clases\DePosicion.cs" />
     <Compile Include="Clases\Empleado.cs" />
+    <Compile Include="Clases\Empresa.cs" />
     <Compile Include="Clases\Jugador.cs" />
     <Compile Include="Clases\Libro.cs" />
     <Compile Include="Clases\Llanta.cs" />
@@ -105,6 +107,12 @@
     <Compile Include="frm3_1.Designer.cs">
       <DependentUpon>frm3_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEj1P3-2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEj1P3-2.Designer.cs">
+      <DependentUpon>frmEj1P3-2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEj5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +145,9 @@
     <EmbeddedResource Include="frm3_1.resx">
       <DependentUpon>frm3_1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEj1P3-2.resx">
+      <DependentUpon>frmEj1P3-2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEj5.resx">
       <DependentUpon>frmEj5.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +166,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Clases\frmEj1P3.2">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="Clases\frmEj1P3.Designer.2" />
+    <None Include="frm3.2-1">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="frm3.Designer.2-1" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

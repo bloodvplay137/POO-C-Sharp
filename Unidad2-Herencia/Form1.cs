@@ -74,5 +74,11 @@ namespace Unidad2_Herencia
             frm3_3_1 frm = new frm3_3_1();
             frm.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmEj1P3_2 frm = new frmEj1P3_2();
+            frm.Show();
+        }
     }
 }
