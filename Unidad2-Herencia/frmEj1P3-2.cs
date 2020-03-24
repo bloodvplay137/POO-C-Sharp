@@ -43,6 +43,7 @@ namespace Unidad2_Herencia
                 }
             }
             btnCrear.Enabled = false;
+            
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
@@ -68,6 +69,28 @@ namespace Unidad2_Herencia
                 }
             }
             txtNumero.Focus();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow currentRow = dataGridView1.CurrentRow;
+            if (currentRow.Cells == null)
+            {
+                MessageBox.Show("Ya no hay departamentos. Eliminando empresa");
+                empresa = null;
+                return;
+            }
+            if (currentRow == null)
+            {
+                MessageBox.Show("Seleccione un renglón del dataGridView");
+                return;
+            }
+            else
+            {
+                empresa.eliminarDepartamento(currentRow.Index);
+                mostrarDeptos();
+            }
+            
         }
     }
 }

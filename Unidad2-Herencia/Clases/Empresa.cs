@@ -40,6 +40,10 @@ namespace Unidad2_Herencia.Clases
 		{
 			return listaDepartamentos.GetEnumerator();
 		}
+		public void eliminarDepartamento(int index)
+		{
+			listaDepartamentos.RemoveAt(index);
+		}
 		~Empresa(){
 			listaDepartamentos.Clear();
 		}

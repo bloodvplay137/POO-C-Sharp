@@ -48,6 +48,7 @@
             this.Jefe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.gpbTodo.SuspendLayout();
             this.gpbParte.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -228,7 +229,7 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(261, 179);
+            this.btnInsertar.Location = new System.Drawing.Point(261, 160);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(75, 48);
             this.btnInsertar.TabIndex = 3;
@@ -236,11 +237,22 @@
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(261, 214);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 48);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar Depto";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // frmEj1P3_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 450);
+            this.ClientSize = new System.Drawing.Size(370, 450);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.dataGridView1);
@@ -280,5 +292,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Jefe;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnInsertar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
