@@ -43,6 +43,7 @@ namespace Unidad2_Herencia.Clases
 		public void eliminarDepartamento(int index)
 		{
 			listaDepartamentos.RemoveAt(index);
+			
 		}
 		~Empresa(){
 			listaDepartamentos.Clear();

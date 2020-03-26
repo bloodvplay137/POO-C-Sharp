@@ -29,7 +29,28 @@ namespace Unidad2_Herencia.Clases
 			get { return jefe; }
 			set { jefe = value; }
 		}
+		List<Empleado> listaEmpleados;
+		public Departamento()
+		{
+			listaEmpleados = new List<Empleado>();
+		}
+		public void insertarEmpleado(Empleado empleado)
+		{
+			listaEmpleados.Add(empleado);
+		}
+		public IEnumerator<Empleado> GetEnumerator()
+		{
+			return listaEmpleados.GetEnumerator();
+		}
+		public void eliminarEmpleado(int index)
+		{
+			listaEmpleados.RemoveAt(index);
+			//listaEmpleados.Remove(empleado);
 
-
+		}
+		~Departamento()
+		{
+			listaEmpleados.Clear();
+		}
 	}
 }

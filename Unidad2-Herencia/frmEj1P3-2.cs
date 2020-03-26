@@ -14,6 +14,7 @@ namespace Unidad2_Herencia
     public partial class frmEj1P3_2 : Form
     {
         Empresa empresa;
+        DataGridViewRow currentRow;
         public frmEj1P3_2()
         {
             InitializeComponent();
@@ -26,6 +27,28 @@ namespace Unidad2_Herencia
 
         private void frmEj1P3_2_Load(object sender, EventArgs e)
         {
+            
+            empresa = new Empresa();
+            empresa.RFC = "AX243";
+            empresa.RazonSocial = "Empresa Test";
+            empresa.Gerente = "Gerente Test";
+            
+            
+            Departamento departamento;
+            departamento = new Departamento();
+            departamento.Numero = 1;
+            departamento.Nombre = "RH";
+            departamento.Jefe = "Jefe 1";
+            empresa.insertar(departamento);
+            Departamento departamento1;
+            departamento1 = new Departamento();
+            departamento1.Numero = 2;
+            departamento1.Nombre = "Sistemas";
+            departamento1.Jefe = "Jefe 2";
+            empresa.insertar(departamento1);
+            mostrarDeptos();
+            
+
 
         }
 
@@ -73,24 +96,123 @@ namespace Unidad2_Herencia
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            DataGridViewRow currentRow = dataGridView1.CurrentRow;
-            if (currentRow.Cells == null)
-            {
-                MessageBox.Show("Ya no hay departamentos. Eliminando empresa");
-                empresa = null;
-                return;
-            }
+            currentRow = dataGridView1.CurrentRow;
+
+
             if (currentRow == null)
             {
                 MessageBox.Show("Seleccione un renglón del dataGridView");
                 return;
             }
-            else
+            else 
             {
                 empresa.eliminarDepartamento(currentRow.Index);
                 mostrarDeptos();
             }
             
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnInsE_Click(object sender, EventArgs e)
+        {
+            currentRow = dataGridView1.CurrentRow;
+            //Creo mi empleado y le doy valores
+            Empleado empleado = new Empleado();
+            empleado.Num = int.Parse(txtNumE.Text);
+            empleado.Nombre = txtNomE.Text;
+            empleado.Sueldo = double.Parse(txtSueldoE.Text);
+            // inserto mi empleado en mi lista de empleados
+            Departamento currentDep = new Departamento();
+            foreach (Departamento departamento in empresa)
+            {
+                if (currentRow.Cells[0].Value.ToString() == departamento.Numero.ToString())
+                {
+                    currentDep = departamento;
+                    break;
+                }
+            }
+            //revisar.
+            currentDep.insertarEmpleado(empleado);
+            // Mostrar los emleados del departamento correspondiente en nuestro datagridview de empleados.
+            MostrarEmpleados(currentDep);
+        }
+        void MostrarEmpleados(Departamento currentDep)
+        {
+            // limpio mi datagridview de empleados
+            dgEmpleados.Rows.Clear();
+
+            foreach (Empleado empleado in currentDep)
+            {
+                dgEmpleados.Rows.Add(empleado.Num, empleado.Nombre, empleado.Sueldo);
+            }
+            foreach (Control t in gpbEmpleado.Controls)
+            {
+                if (t is TextBox)
+                {
+                    t.ResetText();
+                }
+            }
+            txtNumE.Focus();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void btnMostrarEmpleados_Click(object sender, EventArgs e)
+        {
+            currentRow = dataGridView1.CurrentRow;
+            foreach (Departamento departamentoActual in empresa)
+            {
+                int RenglonNumero = int.Parse(currentRow.Cells[0].Value.ToString());
+                if (RenglonNumero == departamentoActual.Numero)
+                {
+                    MostrarEmpleados(departamentoActual);
+                    break;
+                }
+            }
+        }
+
+        private void btnEliE_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow EmpleadoActual = dgEmpleados.CurrentRow;
+            foreach (Departamento departamentoActual in empresa)
+            {
+                int RenglonNumero = int.Parse(currentRow.Cells[0].Value.ToString());
+                if (RenglonNumero == departamentoActual.Numero)
+                {
+                    departamentoActual.eliminarEmpleado(EmpleadoActual.Index);
+                    MostrarEmpleados(departamentoActual);
+                    break;
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //  tarea
+            Departamento destruirDepartamento()
+            {
+                Departamento dep = new Departamento();
+                currentRow = dataGridView1.CurrentRow;
+                foreach (Departamento departamentoActual in empresa)
+                {
+                    int RenglonNumero = int.Parse(currentRow.Cells[0].Value.ToString());
+                    if (RenglonNumero == departamentoActual.Numero)
+                    {
+                        dep = departamentoActual;
+                    }
+                }
+                return dep;   
+            }
+            Departamento destruir = new Departamento();
+            destruir = destruirDepartamento(); 
+            destruir = null;
+            mostrarDeptos();
         }
     }
 }
