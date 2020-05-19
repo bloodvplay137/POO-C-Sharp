@@ -16,7 +16,7 @@ namespace Practica_5_Eventos
     {
         Estudiante unEstudiante = new Estudiante();
         const string CORREO = "juan.ahumada@wakecode.mx";
-        const string PASSWORD = "Jahumadapass19*";
+        const string PASSWORD = "1234567899";
         const string SERVIDOR = "mail.wakecode.mx";
         const int PUERTO = 587;
         public frm5_4()
