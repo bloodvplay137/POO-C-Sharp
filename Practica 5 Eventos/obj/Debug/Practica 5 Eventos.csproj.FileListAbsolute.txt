@@ -1,0 +1,10 @@
+D:\dev\POO\WindowsForms\Practica 5 Eventos\bin\Debug\Practica 5 Eventos.exe.config
+D:\dev\POO\WindowsForms\Practica 5 Eventos\bin\Debug\Practica 5 Eventos.exe
+D:\dev\POO\WindowsForms\Practica 5 Eventos\bin\Debug\Practica 5 Eventos.pdb
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica 5 Eventos.csprojAssemblyReference.cache
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica_5_Eventos.FrmMain.resources
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica_5_Eventos.frm5_4.resources
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica_5_Eventos.Properties.Resources.resources
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica 5 Eventos.csproj.GenerateResource.cache
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica 5 Eventos.exe
+D:\dev\POO\WindowsForms\Practica 5 Eventos\obj\Debug\Practica 5 Eventos.pdb
