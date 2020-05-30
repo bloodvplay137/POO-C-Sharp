@@ -1,0 +1,9 @@
+D:\dev\POO\Serializacion\bin\Debug\Serializacion.exe.config
+D:\dev\POO\Serializacion\bin\Debug\Serializacion.exe
+D:\dev\POO\Serializacion\bin\Debug\Serializacion.pdb
+D:\dev\POO\Serializacion\obj\Debug\Serializacion.csprojAssemblyReference.cache
+D:\dev\POO\Serializacion\obj\Debug\Serializacion.Form1.resources
+D:\dev\POO\Serializacion\obj\Debug\Serializacion.Properties.Resources.resources
+D:\dev\POO\Serializacion\obj\Debug\Serializacion.csproj.GenerateResource.cache
+D:\dev\POO\Serializacion\obj\Debug\Serializacion.exe
+D:\dev\POO\Serializacion\obj\Debug\Serializacion.pdb
